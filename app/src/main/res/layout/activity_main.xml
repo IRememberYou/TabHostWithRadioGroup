@@ -21,7 +21,16 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_above="@android:id/tabs"
-            android:layout_alignParentTop="true"/>
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/content_one"/>
+
+
+        </FrameLayout>
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -40,20 +49,32 @@
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
+
                 <RadioButton
                     android:id="@+id/rb_message"
                     style="@style/radio_button_style"
-                    android:text="消息"/>
+                    android:drawableTop="@drawable/button_contact_selector"
+                    android:text="连接"/>
 
                 <RadioButton
                     android:id="@+id/rb_contact"
                     style="@style/radio_button_style"
-                    android:text="联系人"/>
+                    android:drawableTop="@drawable/button_mine_selector"
+                    android:text="头条"/>
 
                 <RadioButton
                     android:id="@+id/rb_dynamic"
                     style="@style/radio_button_style"
-                    android:text="动态"/>
+                    android:drawableTop="@drawable/button_dynamic_selector"
+                    android:text="视频"/>
+
+                <RadioButton
+                    android:id="@+id/rb_mine"
+                    style="@style/radio_button_style"
+                    android:drawableTop="@drawable/button_message_selector"
+                    android:text="我的"/>
+
+
             </RadioGroup>
         </FrameLayout>
     </RelativeLayout>

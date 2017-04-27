@@ -39,6 +39,9 @@ public class MainActivity extends TabActivity {
                     case R.id.rb_dynamic:
                         mTabHost.setCurrentTab(2);
                         break;
+                    case R.id.rb_mine:
+                        mTabHost.setCurrentTab(3);
+                        break;
                 }
             }
         });
@@ -63,6 +66,10 @@ public class MainActivity extends TabActivity {
         mTabHost.addTab(mTabHost.newTabSpec("3")
             .setIndicator("dynamic")
             .setContent(new Intent(this, DynamicActivity.class)));
+        //mine
+        mTabHost.addTab(mTabHost.newTabSpec("4")
+            .setIndicator("mine")
+            .setContent(R.id.iv));
 
         //default show message
         mTabHost.setCurrentTab(0);

@@ -5,10 +5,10 @@
               android:layout_height="match_parent"
               android:orientation="vertical">
 
-    <TextView
+    <ImageView
+        android:src="@mipmap/content_four"
+        android:scaleType="fitXY"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="activity_message"/>
+        android:layout_height="match_parent"/>
 
 </LinearLayout>

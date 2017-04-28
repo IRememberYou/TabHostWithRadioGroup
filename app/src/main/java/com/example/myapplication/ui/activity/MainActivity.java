@@ -1,10 +1,12 @@
-package com.example.myapplication;
+package com.example.myapplication.ui.activity;
 
 import android.app.TabActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.RadioGroup;
 import android.widget.TabHost;
+
+import com.example.myapplication.R;
 
 public class MainActivity extends TabActivity {
 
